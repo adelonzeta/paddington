@@ -1,0 +1,75 @@
+.navigation
+  @extend .navbar
+  @extend .navbar-default
+  text-transform: uppercase
+  letter-spacing: 2px
+  border-radius: 0
+  border: none
+  background: #fff
+  margin-bottom: 0
+  .navbar-collapse
+    padding: 0
+  .header
+    @extend .navbar-header
+    button
+      @extend .navbar-toggle
+  ul
+    @extend .nav
+    @extend .navbar-nav
+    margin: 1px 0 0
+    li
+      margin-right: 30px
+      a
+        padding: 30px 0 25px
+        border-bottom: solid 5px #fff
+        &:hover
+          border-bottom-color: $accent-color
+      &.active
+        a,
+        a:hover
+          background: transparent
+          border-bottom-color: $accent-color
+  .btn-primary
+    @extend .btn
+    @extend .navbar-btn
+    @extend .pull-right
+    margin: 0
+    padding: 30px 70px
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-weight: 400
+    border-radius: 0
+    outline: none
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .navigation
+    font-size: 0.9em
+    letter-spacing: 0
+    ul
+      li
+        margin-right: 10px
+    .btn-primary
+      letter-spacing: 0
+      padding: 30px
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  .navigation
+    font-size: 1em
+    ul
+      li
+        margin-right: 20px
+    .btn-primary
+      padding: 30px 60px
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  .navigation
+    letter-spacing: 2px
+    ul
+      li
+        margin-right: 30px
+    .btn-primary
+      padding: 30px 70px
+      letter-spacing: 2px

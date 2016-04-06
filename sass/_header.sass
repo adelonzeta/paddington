@@ -1,0 +1,71 @@
+header
+  margin-bottom: 15px
+  .container
+    padding: 0
+  .media
+    .media-left
+      padding-right: 0
+      img
+        width: 118px
+    .media-body
+      background: #fff
+      padding: 10px 20px
+  h1
+    font-weight: 700
+    letter-spacing: 2px
+    line-height: 1.2em
+    font-size: 1.5em
+    color: #444
+    margin: 0 0 10px
+  p
+    text-transform: uppercase
+    font-size: 1em
+    letter-spacing: 1px
+    color: #777
+    margin-bottom: 0
+  .btn
+    border-radius: 0
+    text-transform: uppercase
+    letter-spacing: 2px
+    padding: 20px
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  header
+    background: url(../assets/header.jpg) no-repeat center / cover
+    padding: 400px 0 0
+    height: 700px
+    margin-bottom: 0
+    .container
+      padding-left: 15px
+      padding-right: 15px
+    .media
+      .media-left
+        img
+          width: auto
+      .media-body
+        padding: 34px 50px
+    h1
+      font-size: 1.7em
+      font-weight: 300
+      margin: 0 0 20px
+      line-height: 1.3em
+    p
+      font-size: 1.2em
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  header
+    h1
+      font-size: 2.5em
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  header
+    h1
+      font-size: 3em
+
+header.mobile
+  background: none
+  padding: 0
+  height: auto

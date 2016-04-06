@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100)
+@import variables
+@import ../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss
+@import ../bower_components/font-awesome/scss/font-awesome.scss
+@import navigation
+@import header
+
+.checksize
+  float: left
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .checksize
+    float: none
+
+
+section
+  h2
+    margin: 0 0 30px
+    font-weight: 300
+    font-size: 1.5em
+    letter-spacing: 2px
+    &.visible-xs
+      margin: 0 0 5px
+    a
+      background: #f4f4f4
+      display: block
+      padding: 20px
+      color: #333
+      &:hover,
+      &:focus
+        text-decoration: none
+      img
+        margin-right: 30px
+        width: 35px
+        vertical-align: middle
+      .fa
+        vertical-align: sub
+    img
+      vertical-align: sub
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  section
+    padding: 80px 0
+    &:nth-child(even)
+      background: #F4F4F4
+    h2
+      font-size: 2.8em
+
+.table>thead>tr>th, .table>thead>tr>td, .table>tbody>tr>th, .table>tbody>tr>td, .table>tfoot>tr>th, .table>tfoot>tr>td
+  padding: 20px 0
+
+.table
+  border-top: solid 2px #333
+  margin-bottom: 0
+  tbody
+    td:nth-child(2)
+      color: $primary-color
+    td:nth-child(2),
+    td:nth-child(3)
+      text-align: right
+      width: 100px
+  &.opening-hours
+    tbody
+      td:nth-child(2)
+        width: 150px
+        color: #333
+        font-weight: 500
+        span
+          color: #777
+          text-transform: uppercase
+
+.book-online
+  .well
+    background: #fff
+    border: none
+    text-align: center
+    padding: 60px 40px
+    margin-bottom: 0
+    border-radius: 0
+    ul
+      width: 255px
+      margin: 0 auto
+    h4
+      text-transform: uppercase
+      font-weight: 300
+      color: #777
+      font-size: 2em
+      letter-spacing: 2px
+      margin-top: 0
+    .btn
+      border-radius: 0
+      padding: 25px 60px
+      letter-spacing: 2px
+      margin: 30px 0
+      text-transform: uppercase
+    label
+      color: #999
+      font-weight: 300
+      font-size: 1.3em
+      margin-bottom: 10px
+    img
+      border: solid 1px #D7D7D7
+      margin: 0 3px
+  ol
+    list-style-type: none
+    padding: 0
+    margin: 80px 0 0
+    li
+      margin: 0 0 50px
+      color: #777
+      font-size: 1.2em
+      font-weight: 300
+    span
+      background: #fff
+      font-size: 2em
+      font-weight: 100
+      padding: 23px 35px
+      border-radius: 50px
+      margin-right: 20px
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .book-online
+    ol
+      span
+        padding: 15px 25px
+        margin-right: 5px
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  .book-online
+    ol
+      span
+        padding: 23px 35px
+        margin-right: 20px
+
+.about-us,
+.location,
+.reviews
+  p
+    color: #777
+    font-size: 1.3em
+    line-height: 1.5em
+    font-weight: 300
+    margin-bottom: 0
+
+.reviews
+  blockquote
+    background: #9B48BA
+    color: #FFF0FF
+    border: none
+    padding: 30px
+    font-weight: 300
+    position: relative
+    margin-bottom: 30px
+    p
+      color: #FFF0FF
+      font-size: 1em
+    a
+      text-transform: uppercase
+      color: #fff
+      margin-top: 20px
+      display: inline-block
+    .fa-caret-down
+      position: absolute
+      bottom: -40px
+      font-size: 4em
+      color: #9B48BA
+      left: 20px
+
+footer
+  padding: 30px 0
+  .nav-pills
+    li
+      margin-right: 25px
+      a
+        padding: 0
+        color: #333
+        text-transform: uppercase
+        &:hover,
+        &:focus
+          background: transparent
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  footer
+    padding: 80px 0
+
+
+#collapse-services,
+#collapse-book-online,
+#collapse-about,
+#collapse-location,
+#collapse-opening,
+#collapse-reviews
+  padding: 20px
+
+#collapse-location
+  min-height: 500px
+
+#collapse-reviews
+  & > div
+    margin-bottom: 40px
+
+#collapse-about
+  p
+    margin-bottom: 20px
+
+#collapse-book-online
+  ol
+    margin: 0
+    span
+      background: #f4f4f4
+      padding: 10px 18px
+      font-size: 1.5em
+  .well
+    background: #f4f4f4
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  #collapse-services,
+  #collapse-book-online,
+  #collapse-about,
+  #collapse-location,
+  #collapse-opening,
+  #collapse-reviews
+    padding: 0
+
+  #collapse-reviews
+    & > div
+      margin-bottom: 0
+  #collapse-about
+    p
+      margin-bottom: 0
+  #collapse-book-online
+    ol
+      margin: 80px 0 0
+      span
+        background: #fff
+        padding: 23px 35px
+        font-size: 2em
+    .well
+      background: #fff
